@@ -22,13 +22,31 @@
         <div class="container menu">
             <img src="img/logo/logo.png" alt="Logo" title="Logo" class="logo">
             <nav>
-                <ul>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><img src="img/navbar/close.png" alt="Close"></a></li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Me</a></li>
                     <li><a href="#">Contact me</a></li>
                     <li><a href="#">See My CV</a></li>
                 </ul>
+                <ul>
+                    <li class="hideOnMobile"><a href="#">Home</a></li>
+                    <li class="hideOnMobile"><a href="#">About Me</a></li>
+                    <li class="hideOnMobile"><a href="#">Contact me</a></li>
+                    <li class="hideOnMobile"><a href="#">See My CV</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><img src="img\navbar\menu.png" alt="Menu"></a></li>
+                </ul>
             </nav>
+            <script>
+                function showSidebar(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+                }
+                function hideSidebar(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'none'
+                }
+            </script>
         </div>
     </header>
     <main>
