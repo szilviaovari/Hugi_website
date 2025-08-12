@@ -1,8 +1,12 @@
 body{
+    background-image: url("../img/wallpaper/white-gray.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     font-family: 'Work Sans', sans-serif;
+    
 }
 
 .menu{
@@ -17,6 +21,10 @@ body{
 
 header{
     background-color: #1a1a1a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 header::after {
