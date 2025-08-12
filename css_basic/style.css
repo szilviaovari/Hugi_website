@@ -2,10 +2,11 @@ body{
     background-image: url("../img/wallpaper/white-gray.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    height: 100%;
     font-family: 'Work Sans', sans-serif;
     
 }
@@ -111,26 +112,61 @@ nav a:hover::before {
     display: none;
 }
 
-@media(max-width: 800px){
+@media(min-width: 600px) and (max-width: 992px){
     .hideOnMobile{
         display: none;
     } 
     .menu-button{
         display: block;
     }
+    .left-part,
+    .right-part {
+        padding-top: 20px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 110%;
+        height: auto;
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
 }
-@media(max-width: 600px){
+@media(max-width: 599px){
     .sidebar{
         width: 100%;
-    } 
+    }
 }
 
 .left-part{
-    padding-top: 40px;
-    background-color: #b99a45;
+    padding-top: 9%;
+    padding-left: 8%;
 }
 
 .right-part{
-    padding-top: 40px;
-    background-color: aqua;
+  padding-top: 20%;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 80px;
+    font-family: Arial;
+    font-variant: small-caps;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.letter-color{
+    color: #b99a45;
+}
+
+.profile-img{
+    border-radius: 15px;
+    padding-left: 20px;
+    height: 95%;
 }
