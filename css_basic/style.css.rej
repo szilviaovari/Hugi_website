@@ -1,0 +1,71 @@
+diff a/css_basic/style.css b/css_basic/style.css	(rejected hunks)
+@@ -112,26 +112,61 @@
+     display: none;
+ }
+ 
+-@media(max-width: 800px){
++@media(min-width: 600px) and (max-width: 992px){
+     .hideOnMobile{
+         display: none;
+     } 
+     .menu-button{
+         display: block;
+     }
++    .left-part,
++    .right-part {
++        padding-top: 20px;
++        padding-left: 0;
++        text-align: center;
++    }
++
++    .profile-img {
++        width: 110%;
++        height: auto;
++        padding-left: 0;
++        margin-bottom: 20px;
++    }
++
++    .name {
++        font-size: 40px;
++    }
+ }
+-@media(max-width: 600px){
++@media(max-width: 599px){
+     .sidebar{
+         width: 100%;
+-    } 
++    }
+ }
+ 
+ .left-part{
+-    padding-top: 40px;
+-    background-color: #b99a45;
++    padding-top: 9%;
++    padding-left: 8%;
+ }
+ 
+ .right-part{
+-    padding-top: 40px;
+-    background-color: aqua;
++  padding-top: 20%;
++}
++
++.name{
++    font-weight: bold;
++    font-size: 80px;
++    font-family: Arial;
++    font-variant: small-caps;
++    text-align: center;
++    padding-left: 10px;
++}
++
++.letter-color{
++    color: #b99a45;
++}
++
++.profile-img{
++    border-radius: 15px;
++    padding-left: 20px;
++    height: 95%;
+ }
+\ No newline at end of file

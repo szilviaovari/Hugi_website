@@ -1,0 +1,21 @@
+diff a/index.html b/index.html	(rejected hunks)
+@@ -52,7 +52,18 @@
+         </div>
+     </header>
+     <main>
+-
++        <div class="container mt-5">
++            <div class="row">
++                <div class="col-lg-6 col-md-6 col-sm-12 left-part">
++                    <p>sziasztok</p>
++                </div>
++                <div class="col-lg-6 col-md-6 col-sm-12 right-part">
++                    <p>sziasztok</p>
++                </div>
++            </div>
++        </div>
++        <div class=""></div>
++        <div class="t"></div>
+     </main>
+     <footer>
+ 

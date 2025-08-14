@@ -131,7 +131,7 @@ nav a:hover::before {
         display: block;
     }
     .name {
-        font-size: 44px;
+        font-size: 50px;
         white-space: nowrap;
         
     }
@@ -140,6 +140,10 @@ nav a:hover::before {
         width: 80%;
         height: auto;
     }
+    #text1, #text2, #text3, #text4{
+        font-size: 40px;
+        padding-top: 2%;
+    }
 }
 
 @media (max-width: 400px) {
@@ -147,14 +151,16 @@ nav a:hover::before {
         width: 100%;
     }
     .name {
-        font-size: 44px;
+        font-size: 50px;
     }
 
     .profile-img {
         width: 80%;
         height: auto;
     }
-    
+    #text1, #text2, #text3, #text4{
+        font-size: 40px;
+    }
 }
 
 .left-part{
@@ -168,10 +174,17 @@ nav a:hover::before {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    padding-top: 13%;
 }
 
-.letter-color{
-    color: #b99a45;
+.letter-color1{
+    color: #343a40;
+}
+.letter-color2{
+    color: #495057;
+}
+.letter-color3{
+    color: #6c757d;
 }
 
 .profile-img{
@@ -196,12 +209,10 @@ nav a:hover::before {
 
 #container {
 	/* Center the text in the viewport. */
-	position: absolute;
+	position: fixed;
 	margin: auto;
 	width: 100vw;
 	height: 80pt;
-	top: 0;
-	bottom: 0;
 	
 	/* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
 	filter: url(#threshold) blur(0.6px);
@@ -209,13 +220,13 @@ nav a:hover::before {
 
 /* Your average text styling */
 #text1, #text2, #text3, #text4 {
-	position: absolute;
+	position: fixed;
 	width: 100%;
-	display: inline-block;
+	display: block;
 	font-family: 'Raleway', sans-serif;
 	font-size: 30pt;
 	color: #b99a45;
 	text-align: center;
-	
 	user-select: none;
+    top: 10%;
 }
