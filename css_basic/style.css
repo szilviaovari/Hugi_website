@@ -123,108 +123,6 @@ nav a:hover::before {
     white-space: nowrap;
 }
 
-@media(max-width: 992px){
-    .hideOnMobile{
-        display: none;
-    } 
-
-    .menu-button{
-        display: block;
-    }
-    .name {
-        font-size: 50px;
-        white-space: nowrap;
-        
-    }
-
-    .profile-img {
-        width: 80%;
-        height: auto;
-    }
-    #text1, #text2, #text3, #text4{
-        font-size: 40px;
-        padding-top: 2%;
-    }
-}
-
-@media (max-width: 400px) {
-    .sidebar{
-        width: 100%;
-    }
-    .name {
-        font-size: 50px;
-    }
-
-    .profile-img {
-        width: 80%;
-        height: auto;
-    }
-    #text1, #text2, #text3, #text4{
-        font-size: 40px;
-    }
-}
-
-.left-part{
-    padding-top: 9%;
-    padding-left: 8%;
-}
-
-.right-part{
-   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    padding-top: 13%;
-}
-
-.letter-color1{
-    color: #343a40;
-}
-
-.profile-img{
-    border-radius: 15px; 
-    height: 95%;
-    max-width: 100%;
-    padding-left: 0;
-    display: block;
-    margin: 0 auto;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.profile-img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
-}
-
-/* Explanation in JS tab */
-
-/* Cool font from Google Fonts! */
-@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
-
-#container {
-	/* Center the text in the viewport. */
-	position: fixed;
-	margin: auto;
-	width: 100vw;
-	height: 80pt;
-	
-	/* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
-	filter: url(#threshold) blur(0.6px);
-}
-
-/* Your average text styling */
-#text1, #text2, #text3, #text4 {
-	position: fixed;
-	width: 100%;
-	display: block;
-	font-family: 'Raleway', sans-serif;
-	font-size: 30pt;
-	color: #b99a45;
-	text-align: center;
-	user-select: none;
-    top: 10%;
-}
 
 .image-container {
     position: relative;
@@ -255,4 +153,125 @@ nav a:hover::before {
     padding-left: 20px;
     font-size: 20px;
     color: #e3d6b4; 
+}
+
+@media(max-width: 992px){
+    .hideOnMobile{
+        display: none;
+    } 
+
+    .menu-button{
+        display: block;
+    }
+    .name {
+        font-size: 50px;
+        white-space: nowrap;
+        
+    }
+    .profile-img {
+        width: 80%;
+        height: auto;
+    }
+    #text1, #text2, #text3, #text4{
+        font-size: 40px;
+        padding-top: 2%;
+    }
+
+    .dots-table-bottom {
+        bottom: -40px; 
+        right: -20px;
+    }
+
+    .dots-table-top {
+        top: -15px; 
+        left: -20px;
+    }
+
+    .dots-table-bottom td,
+    .dots-table-top td {
+        font-size: 15px; /* Még kisebb méret 400px alatt */
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+    .name {
+        font-size: 50px;
+    }
+
+    .profile-img {
+        width: 80%;
+        height: auto;
+    }
+    #text1, #text2, #text3, #text4{
+        font-size: 40px;
+    }
+    .dots-table-bottom td,
+    .dots-table-top td {
+        font-size: 15px; /* Még kisebb méret 400px alatt */
+    }
+    
+}
+
+.left-part{
+    padding-top: 9%;
+    padding-left: 8%;
+}
+
+.right-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 15%;
+}
+
+.letter-color1{
+    color: #343a40;
+}
+
+.profile-img{
+    border-radius: 15px; 
+    height: 95%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+/* Explanation in JS tab */
+
+/* Cool font from Google Fonts! */
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+
+#container {
+	/* Center the text in the viewport. */
+	position: absolute;
+	margin: auto;
+	width: 100vw;
+	height: 80pt;
+	
+	/* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+	filter: url(#threshold) blur(0.6px);
+}
+
+/* Your average text styling */
+#text1, #text2, #text3, #text4 {
+	position: absolute;
+	width: 100%;
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30pt;
+	color: #b99a45;
+	text-align: center;
+	user-select: none;
+    top: 10%;
 }
