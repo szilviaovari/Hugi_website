@@ -27,6 +27,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 header::after {
@@ -180,12 +181,6 @@ nav a:hover::before {
 .letter-color1{
     color: #343a40;
 }
-.letter-color2{
-    color: #495057;
-}
-.letter-color3{
-    color: #6c757d;
-}
 
 .profile-img{
     border-radius: 15px; 
@@ -229,4 +224,35 @@ nav a:hover::before {
 	text-align: center;
 	user-select: none;
     top: 10%;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dots-table-bottom {
+    position: absolute;
+    bottom: -70px; 
+    right: -70px;
+    border-collapse: collapse;
+}
+
+.dots-table-bottom td {
+    padding-left: 20px;
+    font-size: 20px;
+    color: #b99a45; 
+}
+
+.dots-table-top {
+    position: absolute;
+    top: -70px; 
+    left: -70px;
+    border-collapse: collapse;
+}
+
+.dots-table-top td {
+    padding-left: 20px;
+    font-size: 20px;
+    color: #e3d6b4; 
 }
