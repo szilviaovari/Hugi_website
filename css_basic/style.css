@@ -119,14 +119,15 @@ nav a:hover::before {
     font-family: Arial;
     font-variant: small-caps;
     text-align: center;
-    padding-left: 10px;
     white-space: nowrap;
+    padding-bottom: 20px;
 }
 
 
 .image-container {
     position: relative;
     display: inline-block;
+    left: 40px;
 }
 
 .dots-table-bottom {
@@ -173,8 +174,7 @@ nav a:hover::before {
         height: auto;
     }
     #text1, #text2, #text3, #text4{
-        font-size: 40px;
-        padding-top: 2%;
+        font-size: 30px;
     }
 
     .dots-table-bottom {
@@ -206,7 +206,7 @@ nav a:hover::before {
         height: auto;
     }
     #text1, #text2, #text3, #text4{
-        font-size: 40px;
+        font-size: 30px;
     }
     .dots-table-bottom td,
     .dots-table-top td {
@@ -217,7 +217,6 @@ nav a:hover::before {
 
 .left-part{
     padding-top: 9%;
-    padding-left: 8%;
 }
 
 .right-part{
@@ -225,7 +224,6 @@ nav a:hover::before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     padding-top: 15%;
 }
 
@@ -273,5 +271,30 @@ nav a:hover::before {
 	color: #b99a45;
 	text-align: center;
 	user-select: none;
-    top: 10%;
+}
+
+
+.icons{
+    display: flex;             /* rugalmas konténer */
+    justify-content: flex-end;
+}
+
+.icon-inside {
+    list-style: none;       
+    padding: 0;
+    margin: 0;
+}
+
+.icon-inside li {
+    margin-left: 20px;
+}
+
+.icon-inside a {
+    color: #1a1a1a; 
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+
+.icon-inside a:hover {
+    color: gray;
 }
