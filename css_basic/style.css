@@ -225,6 +225,7 @@ nav a:hover::before {
     justify-content: center;
     align-items: center;
     padding-top: 15%;
+    padding-bottom: 0;
 }
 
 .letter-color1{
@@ -273,28 +274,60 @@ nav a:hover::before {
 	user-select: none;
 }
 
-
 .icons{
-    display: flex;             /* rugalmas konténer */
+    display: flex;;
     justify-content: flex-end;
 }
 
 .icon-inside {
-    list-style: none;       
+    list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: row; 
+    
 }
 
 .icon-inside li {
     margin-left: 20px;
+    font-size: 2rem;
+    position: relative;
 }
 
 .icon-inside a {
     color: #1a1a1a; 
     text-decoration: none; 
     transition: color 0.3s;
+
 }
 
 .icon-inside a:hover {
     color: gray;
+}
+
+.icon-inside li a {
+    color: #1a1a1a;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px; /* legyen hely a vonalnak */
+    transition: color 0.3s;
+}
+
+.icon-inside li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0; /* a link alján */
+    height: 5px; /* csík vastagsága */
+    width: 0%;
+    background-color: #b99a45;
+    transition: width 0.25s ease-in-out;
+}
+
+.icon-inside li a:hover {
+    color: gray; /* színváltás hoverre */
+}
+
+.icon-inside li a:hover::after {
+    width: 100%; /* amikor hover, kitölti a teljes szélességet */
 }
