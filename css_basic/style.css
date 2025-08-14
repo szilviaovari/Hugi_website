@@ -189,8 +189,9 @@ nav a:hover::before {
 
     .dots-table-bottom td,
     .dots-table-top td {
-        font-size: 15px; /* Még kisebb méret 400px alatt */
+        font-size: 15px;
     }
+
 }
 
 @media (max-width: 400px) {
@@ -210,7 +211,7 @@ nav a:hover::before {
     }
     .dots-table-bottom td,
     .dots-table-top td {
-        font-size: 15px; /* Még kisebb méret 400px alatt */
+        font-size: 15px;
     }
     
 }
@@ -309,7 +310,7 @@ nav a:hover::before {
     color: #1a1a1a;
     text-decoration: none;
     position: relative;
-    padding-bottom: 5px; /* legyen hely a vonalnak */
+    padding-bottom: 5px;
     transition: color 0.3s;
 }
 
@@ -317,17 +318,50 @@ nav a:hover::before {
     content: '';
     position: absolute;
     left: 0;
-    bottom: 0; /* a link alján */
-    height: 5px; /* csík vastagsága */
+    bottom: 0;
+    height: 5px;
     width: 0%;
     background-color: #b99a45;
     transition: width 0.25s ease-in-out;
 }
 
 .icon-inside li a:hover {
-    color: gray; /* színváltás hoverre */
+    color: #b99a45; 
 }
 
 .icon-inside li a:hover::after {
-    width: 100%; /* amikor hover, kitölti a teljes szélességet */
+    width: 100%;
+}
+
+.p-design{
+    margin-left: 42%;
+    margin-top: 50px;
+    position: relative;
+    display: inline-block;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    z-index: 1;
+
+}
+
+.p-design::before {
+    content: "";
+    position: absolute;
+    top: 53px;
+    left: 20px;
+    width: 97%;
+    height: 35%;
+    background-color: #d5c28f;
+    transform: matrix(1, 0, -0.466308, 1, 0, 0);
+    z-index: -1;
+    transition: all 0.5s ease;
+    border-radius: 6px;
+}
+
+.p-design:hover::before {
+    background-color: #b99a45;
+    transform: matrix(1, 0, -0.466308, 1, 0, 0) scale(1.1);
 }
