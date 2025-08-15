@@ -115,7 +115,7 @@ nav a:hover::before {
 
 .name{
     font-weight: bold;
-    font-size: 80px;
+    font-size: 70px;
     font-family: Arial;
     font-variant: small-caps;
     text-align: center;
@@ -334,17 +334,21 @@ nav a:hover::before {
 }
 
 .p-design{
-    margin-left: 42%;
-    margin-top: 50px;
+    margin:auto 0;
+    margin-top: 62px;
     position: relative;
     display: inline-block;
     font-variant: small-caps;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3.7rem;
     letter-spacing: 2px;
     white-space: nowrap;
     z-index: 1;
 
+}
+
+.align-center {
+    text-align: center;
 }
 
 .p-design::before {
