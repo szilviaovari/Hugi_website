@@ -192,6 +192,12 @@ nav a:hover::before {
         font-size: 15px;
     }
 
+    .dots-table-bottom_left2 {
+    position: absolute;
+    bottom: 13%; 
+    left: 15%;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -212,6 +218,12 @@ nav a:hover::before {
     .dots-table-bottom td,
     .dots-table-top td {
         font-size: 15px;
+    }
+
+    .dots-table-bottom_left2 {
+    position: absolute;
+    bottom: 13%; 
+    left: 15%;
     }
     
 }
@@ -362,10 +374,55 @@ nav a:hover::before {
     transform: matrix(1, 0, -0.466308, 1, 0, 0);
     z-index: -1;
     transition: all 0.5s ease;
-    border-radius: 6px;
 }
 
 .p-design:hover::before {
     background-color: #b99a45;
     transform: matrix(1, 0, -0.466308, 1, 0, 0) scale(1.1);
+}
+
+.quote{
+    display: block;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+.quote:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.change-picture{
+    width: 6%;
+    margin-left: 20px;
+}
+
+.left-part1, .right-part1, .left-part2, .right-part2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.p-text{
+    color: black;
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 25px;
+}
+.p-text2{
+    color: black;
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 35px;
+}
+
+.golden-text{
+    color: #b99a45;
+    font-weight: bold;
 }
