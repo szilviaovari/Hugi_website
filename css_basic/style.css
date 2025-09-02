@@ -8,7 +8,15 @@ body{
     padding: 0;
     overflow-x: hidden;
     font-family: 'Work Sans', sans-serif;
-    
+    scroll-behavior: smooth;
+}
+
+#about-me{
+    scroll-margin-top: 80px;
+}
+
+#contact-me{
+    scroll-margin-top: 80px;
 }
 
 .menu{
@@ -524,10 +532,8 @@ textarea{
     text-align: center;
 }
 
-
-/* Popup háttér */
 .popup {
-  display: none; /* alapból rejtett */
+  display: none; 
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
@@ -537,7 +543,6 @@ textarea{
   z-index: 9999;
 }
 
-/* Popup doboz */
 .popup-content {
   background: #fff;
   padding: 20px 30px;
@@ -559,7 +564,7 @@ footer{
 
 .footercontainer{
     width: 100%;
-    padding: 70px 30px 20px;
+    padding: 50px 30px 20px;
 }
 
 .socialIcons{
@@ -569,16 +574,18 @@ footer{
 
 .socialIcons a{
     text-decoration: none;
-    padding: 10px;
-    background-color: white;
-    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #e3d6b4;
+    margin: 5px;
     border-radius: 50%;
 }
 
 .socialIcons a i{
     font-size: 2em;
-    color: black;
-    opacity: 0.9;
+    color: #1a1a1a;
 }
 
 .socialIcons a:hover{
@@ -587,34 +594,62 @@ footer{
 }
 
 .socialIcons a:hover i{
-    color: white;
+    color: #e3d6b4;
     transition: 0.5s;
 }
 
 .footernav{
     margin: 30px 0;
+    margin-right: 30px;
 }
 
 .footernav ul{
     display: flex;
     justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
 }
 
 .footernav ul li a{
-    color: #d5c28f;
-    margin: 20px;
     text-decoration: none;
+    color: #e3d6b4;
+    margin: 20px;
     font-size: 1.3em;
-    opacity: 0.7;
     transition: 0.5s;
 }
 
-.footernav ul li a{
-    color: #d5c28f;
-    margin: 20px;
-    text-decoration: none;
-    font-size: 1.3em;
-    opacity: 0.7;
-    transition: 0.5s;
+.footernav ul li a:hover{
+    color: #b99a45;
 }
 
+.footerbottom{
+    background-color: #0e0e0e;
+    padding: 7px;
+    text-align: center;
+}
+
+.footerbottom p{
+    color: #d5c28f;
+}
+
+.designer{
+    color: #b99a45;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media(max-width: 700px){
+    .footernav ul{
+        flex-direction: column;
+    }
+
+    .footernav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
